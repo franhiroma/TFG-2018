@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/menu_principal.unity
+    guid: cf84607621740d54295147d8697f7c7d
+  - enabled: 1
+    path: Assets/Scenes/Rendija_lvl.unity
+    guid: 2fb9d6e6e9d7dc849804ae31e2541400
