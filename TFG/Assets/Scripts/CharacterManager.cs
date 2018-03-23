@@ -6,7 +6,8 @@ public class CharacterManager : MonoBehaviour {
 
     Animator anim;
     private Rigidbody2D characterBody;
-    public float characterSpeed = 3.0F;
+    private SpriteRenderer characterSprite;
+    public int characterSpeed = 3;
 
     // Use this for initialization
     void Start ()
@@ -15,12 +16,15 @@ public class CharacterManager : MonoBehaviour {
         anim.SetInteger("AnimState", 0);
         anim.SetBool("isMoving", false);
         characterBody = GetComponent<Rigidbody2D>();
+        characterSprite = GetComponent<SpriteRenderer>();
 
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
+        checkDepth();
+
         if (Input.GetKey(KeyCode.D))
         {
             anim.SetInteger("AnimState", 0);
@@ -32,7 +36,7 @@ public class CharacterManager : MonoBehaviour {
         {
             anim.SetInteger("AnimState", 1);
             anim.SetBool("isMoving", true);
-            characterBody.velocity = Vector2.up * characterSpeed; // x = 0, y = 1
+            characterBody.velocity = Vector2.up * characterSpeed ; // x = 0, y = 1
         }
         else if (Input.GetKey(KeyCode.A))
         {
@@ -51,5 +55,11 @@ public class CharacterManager : MonoBehaviour {
             characterBody.velocity = Vector2.zero; // x = 0, y = 0 
             anim.SetBool("isMoving", false);
         }
+    }
+
+    private void checkDepth()
+    {
+        if (transform.position.y < 0) characterSprite.sortingOrder = 1;
+        else if (transform.position.y >= 0) characterSprite.sortingOrder = 0;
     }
 }
