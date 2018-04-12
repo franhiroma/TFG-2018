@@ -46,6 +46,5 @@ public class DisparoElec : MonoBehaviour {
     void Particulas()
     {
         Instantiate(DisparoElectronesObj, firePoint.position, firePoint.rotation);
-        Debug.Log("Posicion: " + firePoint.position);
     }
 }
