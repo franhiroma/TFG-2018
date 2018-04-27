@@ -104,7 +104,7 @@ public class movDifraccion : MonoBehaviour
         if(collision.gameObject.name == "panel_2")
         {
             movimiento = false;
-            GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            //GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             velDisparo = 0;
         }
         
