@@ -5,7 +5,11 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - panel1_obj: {fileID: 1752972692128100, guid: 5a0f98705b9265440b9a5b64ce1499ae,
+      type: 2}
+  - panel2_obj: {fileID: 1801146155145868, guid: de7a145d2c12ee04abcf7c769a032f27,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

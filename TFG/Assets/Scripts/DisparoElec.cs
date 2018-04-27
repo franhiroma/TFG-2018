@@ -21,14 +21,14 @@ public class DisparoElec : MonoBehaviour {
     {
         if (ratioDisparo == 0)
         {
-            if (Input.GetKeyUp(KeyCode.Space))
+            if (Input.GetKeyUp(KeyCode.Space) && CharacterManager.dispAble == true)
             {
                 Disparo();
             }
         }
         else
         {
-            if (Input.GetKeyUp(KeyCode.Space) && Time.time > coolDown)
+            if (Input.GetKeyUp(KeyCode.Space) && Time.time > coolDown && CharacterManager.dispAble == true)
             {
                 coolDown = Time.time + (1/ratioDisparo);
                 Disparo();

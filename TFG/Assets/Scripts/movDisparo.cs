@@ -7,9 +7,9 @@ public class movDisparo : MonoBehaviour {
     public int velDisparo = 230;
     public int umbral_x = 50;
     public int umbral_y = 50;
+    private int upordown = 0;
     public GameObject panel1_obj;
     public Transform DisparoDifraccionObjUp, DisparoDifraccionObjDown;
-
     private float panel1_x, panel1_y;
     private bool rendija_pasada = false;
 
@@ -17,6 +17,8 @@ public class movDisparo : MonoBehaviour {
     {
         panel1_x = panel1_obj.transform.position.x;
         panel1_y = panel1_obj.transform.position.y;
+        //Random.InitState(System.DateTime.Now.Millisecond);
+        upordown = Random.Range(0, 2);
     }
 
     // Update is called once per frame
@@ -29,8 +31,9 @@ public class movDisparo : MonoBehaviour {
         if (transform.position.x >= panel1_x - umbral_x && !rendija_pasada)
         {
             rendija_pasada = true;
-            Instantiate(DisparoDifraccionObjUp, up, transform.rotation);
-            Instantiate(DisparoDifraccionObjDown, down, transform.rotation);
+            Debug.Log("upordown:= " + upordown);
+            if(upordown == 0) Instantiate(DisparoDifraccionObjUp, up, transform.rotation);
+            else if(upordown == 1) Instantiate(DisparoDifraccionObjDown, down, transform.rotation);
             Destroy(this.gameObject);
         }
 	}

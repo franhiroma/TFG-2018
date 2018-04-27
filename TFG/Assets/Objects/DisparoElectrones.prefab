@@ -51,7 +51,7 @@ Transform:
   m_GameObject: {fileID: 1622218372055776}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 100, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 4721829375114814}
   m_Father: {fileID: 0}
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velDisparo: 230
-  umbral_x: 50
+  umbral_x: 15
   umbral_y: 50
   panel1_obj: {fileID: 1752972692128100, guid: 5a0f98705b9265440b9a5b64ce1499ae, type: 2}
   DisparoDifraccionObjUp: {fileID: 4494545447654314, guid: 6afe107a1d18d09428f926c77dd14cf9,
