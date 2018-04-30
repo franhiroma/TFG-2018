@@ -8,6 +8,8 @@ public class CharacterManager : MonoBehaviour {
     private Rigidbody2D characterBody;
     private SpriteRenderer characterSprite;
     private Transform characterPosition;
+    private BoxCollider2D boxcollider2d;
+    public GameObject detectorUp, detectorDown;
     public int characterSpeed = 3;
     Transform cannon_transform;
     private int radioDisp;
@@ -21,8 +23,11 @@ public class CharacterManager : MonoBehaviour {
         anim.SetBool("isMoving", false);
         characterBody = GetComponent<Rigidbody2D>();
         characterSprite = GetComponent<SpriteRenderer>();
+        boxcollider2d = GetComponent<BoxCollider2D>();
         dispAble = false;
-	}
+        //Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), detectorUp.GetComponent<CircleCollider2D>(), false);
+        //Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), detectorDown.GetComponent<CircleCollider2D>(), false);
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -63,8 +68,16 @@ public class CharacterManager : MonoBehaviour {
 
     private void CheckDepth()
     {
-        if (transform.position.y < 0) characterSprite.sortingOrder = 1;
-        else if (transform.position.y >= 0) characterSprite.sortingOrder = 0;
+        if (transform.position.y < 0)
+        {
+            characterSprite.sortingOrder = 1;
+            boxcollider2d.offset = new Vector2(0, -6);
+        }
+        else if (transform.position.y >= 0)
+        {
+            characterSprite.sortingOrder = 0;
+            boxcollider2d.offset = new Vector2(0, 4);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -73,6 +86,7 @@ public class CharacterManager : MonoBehaviour {
         {
             dispAble = true;
         }
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -81,6 +95,7 @@ public class CharacterManager : MonoBehaviour {
         {
             dispAble = false;
         }
+
     }
 
 }

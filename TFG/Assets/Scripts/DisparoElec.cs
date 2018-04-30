@@ -39,7 +39,6 @@ public class DisparoElec : MonoBehaviour {
     void Disparo()
     {
         Vector2 dirDisparo = Vector2.right;
-        Vector2 firePointPosition = new Vector2(firePoint.position.x, firePoint.position.y);
         Particulas();
     }
 

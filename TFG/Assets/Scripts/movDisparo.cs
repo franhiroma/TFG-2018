@@ -24,6 +24,7 @@ public class movDisparo : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
+        checkDetector();
         Vector2 up = new Vector2(transform.position.x, panel1_y + umbral_y);
         Vector2 down = new Vector2(transform.position.x, panel1_y - umbral_y);
         transform.Translate(Vector2.right * velDisparo * Time.deltaTime);
@@ -31,10 +32,22 @@ public class movDisparo : MonoBehaviour {
         if (transform.position.x >= panel1_x - umbral_x && !rendija_pasada)
         {
             rendija_pasada = true;
-            Debug.Log("upordown:= " + upordown);
+            //Debug.Log("upordown:= " + upordown);
             if(upordown == 0) Instantiate(DisparoDifraccionObjUp, up, transform.rotation);
             else if(upordown == 1) Instantiate(DisparoDifraccionObjDown, down, transform.rotation);
             Destroy(this.gameObject);
         }
 	}
+
+    private void checkDetector()
+    {
+        if (detectaArriba_boton.detectar && !detectaAbajo_boton.detectar)
+        {
+            upordown = 0;
+        }
+        else if (!detectaArriba_boton.detectar && detectaAbajo_boton.detectar)
+        {
+            upordown = 1;
+        }
+    }
 }
