@@ -99,12 +99,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e09e17756a32759479485ffa0bc90f56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velDisparo: 230
+  velDisparo: 0
   umbral_x: 15
   umbral_y: 15
   panel1_obj: {fileID: 1752972692128100, guid: 5a0f98705b9265440b9a5b64ce1499ae, type: 2}
   panel2_obj: {fileID: 1801146155145868, guid: de7a145d2c12ee04abcf7c769a032f27, type: 2}
-  paredInvisible: {fileID: 0}
 --- !u!212 &212546266535166264
 SpriteRenderer:
   m_ObjectHideFlags: 1

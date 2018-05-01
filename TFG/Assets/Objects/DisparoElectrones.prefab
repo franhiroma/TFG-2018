@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a63b087bba835478c4b96a725005f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velDisparo: 230
+  velDisparo: 0
   umbral_x: 15
   umbral_y: 50
   panel1_obj: {fileID: 1752972692128100, guid: 5a0f98705b9265440b9a5b64ce1499ae, type: 2}

@@ -29,13 +29,13 @@ public class GeneradorBichos : MonoBehaviour {
         {
             if (scene.name == "Rendija_lvl1")
             {
-                pos = new Vector2(Random.Range(195.0f, 301.0f), Random.Range(-90.0f, -180.0f));
+                pos = new Vector2(Random.Range(235.0f, 301.0f), Random.Range(-90.0f, -180.0f));
                 Instantiate(bichofeo, pos, transform.rotation);
                 bichoCount += 1;
             }
             else if (scene.name == "Rendija_lvl2")
             {
-                pos = new Vector2(Random.Range(195.0f, 301.0f), Random.Range(180.0f, 110.0f));
+                pos = new Vector2(Random.Range(235.0f, 301.0f), Random.Range(180.0f, 110.0f));
                 Instantiate(bichofeo, pos, transform.rotation);
                 bichoCount += 1;
             }
@@ -56,6 +56,6 @@ public class GeneradorBichos : MonoBehaviour {
 
             tiempo = 0.0f;
         }
-        Debug.Log("bichoCount:= " + bichoCount);
+        //Debug.Log("bichoCount:= " + bichoCount);
     }
 }

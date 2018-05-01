@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class movDifraccion : MonoBehaviour
 {
-    public int velDisparo = 100;
+    private float velDisparo;
     public int umbral_x = 50;
     public int umbral_y = 50;
     private int rangeZona = 0;
@@ -20,6 +20,7 @@ public class movDifraccion : MonoBehaviour
         float y_coord;
         movimiento = true;
         impactado = false;
+        velDisparo = 200.0f;
         panel1_x = panel1_obj.transform.position.x;
         panel2_x = panel2_obj.transform.position.x;
         panel2_height = panel2_obj.GetComponent<SpriteRenderer>().bounds.size.y;

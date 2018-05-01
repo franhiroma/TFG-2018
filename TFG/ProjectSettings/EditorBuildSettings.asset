@@ -17,3 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rendija_lvl2.unity
     guid: 2fb9d6e6e9d7dc849804ae31e2541400
+  - enabled: 1
+    path: Assets/Scenes/Rendija_lvl3.unity
+    guid: 4f888487ab3ac3946889b78271a8818b
+  - enabled: 1
+    path: Assets/Scenes/Rendija_lvl4.unity
+    guid: 7c02344ac7282ee41a4c6f59c66b083c

@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666cc03653d564e4d8d9fc9356cac974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ratioDisparo: 10
+  ratioDisparo: 1
   DisparoElectronesObj: {fileID: 4393149700073524, guid: 8d79413f0c21f09498717af83a61e498,
     type: 2}
 --- !u!212 &212228219160813508

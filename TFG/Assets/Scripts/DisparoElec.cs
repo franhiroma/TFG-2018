@@ -19,19 +19,32 @@ public class DisparoElec : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        /*
+        if (Input.GetKey(KeyCode.Space) && CharacterManager.dispAble == true)
+        {
+            if(energyCharge < limitCharge)
+            {
+                energyCharge += 1.0f;
+            }
+            Debug.Log("energyCharge:=" + energyCharge);
+        }
+        */
+
         if (ratioDisparo == 0)
         {
             if (Input.GetKeyUp(KeyCode.Space) && CharacterManager.dispAble == true)
             {
-                Disparo();
+                Debug.Log("ESTOY DONDE TENGO QUE ESTAR");
+                Disparo();  
             }
         }
         else
         {
             if (Input.GetKeyUp(KeyCode.Space) && Time.time > coolDown && CharacterManager.dispAble == true)
             {
+                Debug.Log("ESTOY DONDE TENGO QUE ESTAR1");
                 coolDown = Time.time + (1/ratioDisparo);
-                Disparo();
+                Disparo();               
             }
         }
 	}
