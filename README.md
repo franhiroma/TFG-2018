@@ -15,3 +15,4 @@ Changelog
 * 06/04/2018 - Menú de seleccion de niveles (v0.01)
 * 12/04/2018 - Doble rendija (v0.01)
 * 01/05/2018 - Doble rendija (v1.00)
+* 01/05/2018 - Aspecto gráfico preliminar
