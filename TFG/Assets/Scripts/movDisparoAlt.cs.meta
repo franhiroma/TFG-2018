@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 0e96f4257c091bb4db94cbff4bb5e337
+timeCreated: 1526120278
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - panel1_obj: {fileID: 1752972692128100, guid: 5a0f98705b9265440b9a5b64ce1499ae,
+      type: 2}
+  - DisparoDifraccionObjUp: {fileID: 4494545447654314, guid: 6afe107a1d18d09428f926c77dd14cf9,
+      type: 2}
+  - DisparoDifraccionObjDown: {fileID: 4225964060795510, guid: f7ecde3f482b12342bbcf83fdbc50deb,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

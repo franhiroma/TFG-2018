@@ -7,15 +7,17 @@ public class GameManager : MonoBehaviour {
 
     bool gameHasEnded = false;
 
-    public float delay = 1f;
+    public float delay;
+    public static int ondas = 0;
 
-    public GameObject completeLevelUI;
+    public GameObject completeLevelUI, siguiente;
 
     public void CompleteLevel()
     {
         Debug.Log("Has ganado el nivel");
         completeLevelUI.SetActive(true);
-        EndGame();
+        siguiente.SetActive(true);
+        //EndGame();
     }
 
 	// Use this for initialization

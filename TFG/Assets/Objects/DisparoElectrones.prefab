@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4393149700073524}
-  - component: {fileID: 114401225668412626}
+  - component: {fileID: 114388761083718920}
   m_Layer: 0
   m_Name: DisparoElectrones
   m_TagString: Untagged
@@ -70,7 +70,7 @@ Transform:
   m_Father: {fileID: 4393149700073524}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114401225668412626
+--- !u!114 &114388761083718920
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -78,17 +78,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1622218372055776}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71a63b087bba835478c4b96a725005f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e96f4257c091bb4db94cbff4bb5e337, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velDisparo: 0
-  umbral_x: 15
-  umbral_y: 50
+  velDisparo: 200
+  umbral_x: 0
   panel1_obj: {fileID: 1752972692128100, guid: 5a0f98705b9265440b9a5b64ce1499ae, type: 2}
   DisparoDifraccionObjUp: {fileID: 4494545447654314, guid: 6afe107a1d18d09428f926c77dd14cf9,
     type: 2}
   DisparoDifraccionObjDown: {fileID: 4225964060795510, guid: f7ecde3f482b12342bbcf83fdbc50deb,
     type: 2}
+  Ondita_obj: {fileID: 4975646467934226, guid: 3be31b4d9de417f468b0d97c64706e92, type: 2}
 --- !u!212 &212578539258387908
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -122,8 +122,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: d6f9b7f2540e51e48a83762c8dde1501, type: 3}
+  m_SortingOrder: -3
+  m_Sprite: {fileID: 21300000, guid: 2846a2542be5d134cb6c8311459da504, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

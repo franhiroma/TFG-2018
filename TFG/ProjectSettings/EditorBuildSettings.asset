@@ -12,14 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/menu_seleccion.unity
     guid: f6a59e64a3b6a3d41af9b289f99d96a8
   - enabled: 1
+    path: Assets/Scenes/Rendija_lvl0.unity
+    guid: 7e336bde98221c64cb8f70447ab19ce5
+  - enabled: 1
     path: Assets/Scenes/Rendija_lvl1.unity
     guid: fb72ed068e813024fb6849268cc66c26
   - enabled: 1
     path: Assets/Scenes/Rendija_lvl2.unity
-    guid: 2fb9d6e6e9d7dc849804ae31e2541400
+    guid: 6f423efd113689948abd8646c8f18afa
   - enabled: 1
     path: Assets/Scenes/Rendija_lvl3.unity
-    guid: 4f888487ab3ac3946889b78271a8818b
-  - enabled: 1
-    path: Assets/Scenes/Rendija_lvl4.unity
-    guid: 7c02344ac7282ee41a4c6f59c66b083c
+    guid: ad0accead01f1cc4ea9467028d9d37c9

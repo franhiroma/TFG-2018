@@ -25,8 +25,6 @@ public class CharacterManager : MonoBehaviour {
         characterSprite = GetComponent<SpriteRenderer>();
         boxcollider2d = GetComponent<BoxCollider2D>();
         dispAble = false;
-        //Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), detectorUp.GetComponent<CircleCollider2D>(), false);
-        //Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), detectorDown.GetComponent<CircleCollider2D>(), false);
     }
 	
 	// Update is called once per frame

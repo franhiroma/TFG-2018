@@ -14,14 +14,15 @@ public class BichoBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        movimiento = Random.Range(0.0f, 1.0f);
-        CheckDireccion(movimiento);
+        GeneradorBichos.bichoCount += 1;
+        //movimiento = Random.Range(0.0f, 1.0f);
+        //CheckDireccion(movimiento);
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (curTime < cambioDir)
+        /*if (curTime < cambioDir)
         {
             curTime += 1 * Time.deltaTime;
         }
@@ -39,7 +40,7 @@ public class BichoBehaviour : MonoBehaviour {
                 cambioDir = 1 + Random.value;
             }
             curTime = 0;
-        }
+        }*/
 	}
 
     void FixedUpdate()
@@ -83,6 +84,7 @@ public class BichoBehaviour : MonoBehaviour {
         {
             Physics2D.IgnoreCollision(GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
         }
+
     }
 
 }

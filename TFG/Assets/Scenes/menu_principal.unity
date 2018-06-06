@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 54869104}
   - component: {fileID: 54869106}
   - component: {fileID: 54869105}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: fondo_menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f7e8825ca825a9446b9b6f4b0b3278b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58a9dba56d2943e4ca84c2d7f79ef489, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 314198630}
   - component: {fileID: 314198629}
   - component: {fileID: 314198628}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: PlayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 436226872}
   - component: {fileID: 436226871}
   - component: {fileID: 436226870}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,8 +447,8 @@ Canvas:
   m_GameObject: {fileID: 436226869}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 317989709}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -488,7 +488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1175694861}
   - component: {fileID: 1175694862}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: menu_principal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5565944}
   m_AnchorMax: {x: 0.5, y: 0.5565944}
-  m_AnchoredPosition: {x: 3.5, y: 2.8124886}
+  m_AnchoredPosition: {x: 2, y: -205}
   m_SizeDelta: {x: 204.9, y: 185.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1175694862
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 1183820028}
   - component: {fileID: 1183820030}
   - component: {fileID: 1183820029}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -690,7 +690,7 @@ GameObject:
   - component: {fileID: 1489051593}
   - component: {fileID: 1489051592}
   - component: {fileID: 1489051591}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -835,7 +835,7 @@ MonoBehaviour:
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_ForceModuleActive: 1
 --- !u!114 &1669049259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -873,7 +873,7 @@ GameObject:
   - component: {fileID: 1756714653}
   - component: {fileID: 1756714655}
   - component: {fileID: 1756714654}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}

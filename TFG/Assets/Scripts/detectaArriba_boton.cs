@@ -17,6 +17,7 @@ public class detectaArriba_boton : MonoBehaviour {
         if (collision.gameObject.name == "Character")
         {
             detectar = true;
+            Calculos_script.hayQueCalcular = true;
         }
     }
 

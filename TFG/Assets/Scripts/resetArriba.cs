@@ -15,6 +15,7 @@ public class resetArriba : MonoBehaviour
             {
                 detectaArriba_boton.detectar = false;
                 GetComponent<SpriteRenderer>().sprite = spriteActivado;
+                Calculos_script.hayQueCalcular = true;
             }
         }
         else if (activarPuedes == false)

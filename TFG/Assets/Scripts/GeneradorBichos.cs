@@ -15,16 +15,15 @@ public class GeneradorBichos : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        lapsoTiempo = 5.0f;
+        lapsoTiempo = 10.0f;
         tiempo = 0.0f;
         scene = SceneManager.GetActiveScene();
-        bichoCount = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        tiempo += Time.deltaTime;
+        /* tiempo += Time.deltaTime;
         if(tiempo > lapsoTiempo)
         {
             if (scene.name == "Rendija_lvl1")
@@ -57,5 +56,7 @@ public class GeneradorBichos : MonoBehaviour {
             tiempo = 0.0f;
         }
         //Debug.Log("bichoCount:= " + bichoCount);
+
+    */
     }
 }
